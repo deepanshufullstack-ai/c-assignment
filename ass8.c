@@ -1,78 +1,161 @@
-/*
-#include<stdio.h>
-int main(){
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    if((n >= 100 && n <= 999) || (n <= -100 && n >= -999)){
-        printf("given number is three digit number");
-    } else {
-        printf("given number is not three digit number");
-    }
-    return 0;
-}
+// #include<stdio.h>
+// int main(){
+//     int n;
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
+//     if((n >= 100 && n <= 999) || (n <= -100 && n >= -999)){
+//         printf("given number is three digit number");
+//     } else {
+//         printf("given number is not three digit number");
+//     }
+//     return 0;
+// }
 
-#include<stdio.h>
-int main(){
-    int n, m;
-    printf("Enter two numbers: ");
-    scanf("%d%d", &n, &m);
-    if(n > m){
-        printf("Greater number: %d", n);
-    } else if (m > n)
-    {
-        printf("Greater number: %d", m);
-    } else {
-        printf("Both numbers are equal: %d", n);
-    }
+// #include<stdio.h>
+// int main(){
+//     int n, m;
+//     printf("Enter two numbers: ");
+//     scanf("%d%d", &n, &m);
+//     if(n > m){
+//         printf("Greater number: %d", n);
+//     } else if (m > n)
+//     {
+//         printf("Greater number: %d", m);
+//     } else {
+//         printf("Both numbers are equal: %d", n);
+//     }
+//     return 0;
+// }
 
-    return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+//     int a, b, c, d;
+//     printf("Enter 3 numbers: ");
+//     scanf("%d%d%d", &a, &b, &c);
+//     d = b * b - 4 * a * c;
+//     if(d > 0){
+//         printf("Roots are real and distinct");
+//     } else if (d == 0){
+//         printf("Roots are real and equal");
+//     } else {
+//         printf("Roots are imaginary");
+//     }
+// }
 
-#include <stdio.h>
-int main()
-{
-    int a, b, c, d;
-    printf("Enter 3 numbers: ");
-    scanf("%d%d%d", &a, &b, &c);
-    d = b * b - 4 * a * c;
-    if(d > 0){
-        printf("Roots are real and distinct");
-    } else if (d == 0){
-        printf("Roots are real and equal");
-    } else {
-        printf("Roots are imaginary");
-    }
-}
+// #include<stdio.h>
+// int main(){
+//     int year;
+//     printf("Enter a year: ");
+//     scanf("%d", &year);
+//     if((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0)){
+//         printf("Leap year");
+//     } else {
+//         printf("Not leap year");
+//     }
+//     return 0;
+// }
 
-#include<stdio.h>
-int main(){
-    int year;
-    printf("Enter a year: ");
-    scanf("%d", &year);
-    if((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0)){
-        printf("Leap year");
-    } else {
-        printf("Not leap year");
-    }
+// #include<stdio.h>
+// int main(){
+//     int a, b, c;
+//     printf("Enter three numbers: ");
+//     scanf("%d%d%d", &a, &b, &c);
+//     if(a > b && a > c){
+//         printf("%d is a greater", a);
+//     } else if(b > a && b > c){
+//         printf("%d is a greater", b);
+//     } else(c > a && c > b) {
+//         printf("%d is a greater", c);
+//     }
+//     return 0;
+// }
 
-    return 0;
-}
 
-#include<stdio.h>
-int main(){
-    int a, b, c;
-    printf("Enter three numbers: ");
-    scanf("%d%d%d", &a, &b, &c);
-    if(a > b && a > c){
-        printf("%d is a greater", a);
-    } else if(b > a && b > c){
-        printf("%d is a greater", b);
-    } else(c > a && c > b) {
-        printf("%d is a greater", c);
-    }
 
-    return 0;
-}
-    */
 
+
+
+
+
+
+
+// Q1 given number is three digit or not
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     if((num>=100 && num<=999 ) || (num <=-100 && num>=-999)){
+//         printf("Three digit number");
+//     } else {
+//         printf("Not three digit number");
+//     }
+//     return 0;
+// }
+
+// Q2 find greater between two numbers
+// #include<stdio.h>
+// int main(){
+//     int num1, num2;
+//     printf("Enter two number: ");
+//     scanf("%d%d", &num1, &num2);
+//     if(num1>num2){
+//         printf("%d is greater", num1);
+//     } else if(num2>num1){
+//         printf("%d is greater", num2);
+//     } else {
+//         printf("Both are equal");
+//     }
+//     return 0;
+// }
+
+// Q3 find the roots type
+// #include<stdio.h>
+// int main(){
+//     int r1, r2, r3, value;
+//     printf("Enter three numbers: ");
+//     scanf("%d%d%d", &r1, &r2, &r3);
+//     value=r2*r2-4*r1*r3;
+//     if(value>0){
+//         printf("Roots are real & distinct");
+//     } else if (value==0) {
+//         printf("Roots are real & equal");
+//     } else {
+//         printf("Roots are imaginary");
+//     }
+//     return 0;
+// }
+
+// Q4 find leap year or not
+// #include<stdio.h>
+// int main(){
+//     int year;
+//     printf("Enter a year: ");
+//     scanf("%d", &year);
+//     if((year%4 == 0) || (year%400 == 0) &&(year%100 != 0)){
+//         printf("Leap year");
+//     } else {
+//         printf("Not leap year");
+//     }
+//     return 0;
+// }
+
+// Q5 find greater between three numbers
+// #include<stdio.h>
+// int main(){
+//     int n1, n2, n3;
+//     printf("Enter three numbers: ");
+//     scanf("%d%d%d", &n1, &n2, &n3);
+//     if(n1>n2 && n1>n3){
+//         printf("%d is greater", n1);
+//     } else if(n2>n1 && n2>n3){
+//         printf("%d is greater", n2);
+//     } else if(n3>n1 && n3>n2){
+//         printf("%d is greater", n3);
+//     } else 
+//     {
+//         printf("All three numbers are equal");
+//     }
+//     return 0;
+// }
