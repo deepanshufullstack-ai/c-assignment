@@ -1,80 +1,89 @@
-// Q1 calculate factorial of n numbers
+// Q1 calculate factorial of a number
 // #include<stdio.h>
 // int main(){
-//     int n, f=1, i;
+//     int num;
 //     printf("Enter a number: ");
-//     scanf("%d", &n);
-//     for(i=1; i<=n; i++){
-//         f=f*i;
+//     scanf("%d", &num);
+//     int factorial=1;
+//     while(num>=1){
+//         factorial=factorial*num;
+//         num--;
 //     }
-//     printf("Factorial is %d", f);
+//     printf("Factorial=%d", factorial);
 //     return 0;
 // }
 
 // Q2 count digit in a given number
 // #include<stdio.h>
 // int main(){
-//     int n, count = 0;
+//     int num;
 //     printf("Enter a number: ");
-//     scanf("%d", &n);
-
-//     while(n){
-//         n=n/10;
+//     scanf("%d", &num);
+//     int count=0;
+//     int digit=0;
+//     while(num>0){
+//         digit=num%10;
+//         printf("Digit is %d\n", digit);
+//         num=num/10;
 //         count++;
 //     }
-//     printf("Count = %d", count);
+//     printf("Digits count is %d", count);
 //     return 0;
 // }
 
-// Q3 whether the given number is prime or not
-// #include <stdio.h>
-// int main()
-// {
-//     int n, i;
+// Q3 given number is prime or not
+// #include<stdio.h>
+// int main(){
+//     int num;
 //     printf("Enter a number: ");
-//     scanf("%d", &n);
-//     for (i = 2; i <= n - 1; i++)
-//         if (n % i == 0)
+//     scanf("%d", &num);
+//     int i;
+//     for(i=2; i<=num-1; i++){
+//         if(num%2==0){
+//             printf("%d is a not prime number", num);
 //             break;
-
-//     if (i == n)
-//         printf("Prime");
-//     else
-//         printf("Not prime");
-
+//         } else {
+//             printf("%d is a prime number", num);
+//             break;;
+//         }
+//     }
 //     return 0;
 // }
 
-// Q4 calculate LCM of 2 numbers
-// #include <stdio.h>
-// int main()
-// {
-//     int a, b, l;
+// Q4 calculate LCM of two numbers
+// #include<stdio.h>
+// int main(){
+//     int num1, num2, max;
 //     printf("Enter two numbers: ");
-//     scanf("%d%d", &a, &b);
-
-//     for (l = a > b ? a : b; l <= a * b; l++)
-//         if (l % a == 0 && l % b == 0)
+//     scanf("%d%d", &num1, &num2);
+//     max=(num1>num2)? num1 : num2;
+//     while (1)
+//     {
+//         if(max%num1==0 && max%num2==0){
+//             printf("The lcm of %d and %d is %d\n", num1, num2, max);
 //             break;
-//     printf("LCM is %d", l);
+//         }
+//         max++;
+//     }    
 //     return 0;
 // }
 
 // Q5 reverse a given number
-// #include <stdio.h>
-// int main()
-// {
-//     int n, r=0;
+// #include<stdio.h>
+// int main(){
+//     int num;
 //     printf("Enter a number: ");
-//     scanf("%d", &n);
-
-//     while (n)
-//     {
-//         r=r*10+n%10;
-//         n=n/10;
-
+//     scanf("%d", &num);
+//     int digit=0;
+//     int reverse=0;
+//     while(num>0){
+//         digit=num%10;
+//         printf("digit=%d\n", digit);
+//         num=num/10;
+//         printf("num=%d\n", num);
+//         reverse=reverse*10+digit;
+//         printf("reverse=%d\n\n", reverse);
 //     }
-//     printf("%d",r);
-    
+//     printf("Reverse=%d", reverse);
 //     return 0;
 // }

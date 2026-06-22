@@ -1,76 +1,95 @@
-/*
-// Q1 sum of n natural numbers
-#include<stdio.h>
-int main(){
-    int n, i=1, sum = 0;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    while (i<=n)
-    {
-       sum = sum + i;
-       i++;
-    }
-    printf("Sum = %d", sum);
-    return 0;
-}
+// Q1 calculate sum of n natural numbers
+// #include <stdio.h>
+// int main()
+// {
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     int i = 1;
+//     int sum = 0;
+//     while (i <= num)
+//     {
+//         sum = sum + i;
+//         i++;
+//     }
+//     printf("Sum=%d", sum);
+//     return 0;
+// }
 
-// Q2 sum of n even natural numbers
-#include<stdio.h>
-int main(){
-    int n, i=1, sum = 0;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    while (i<=n)
-    {
-       sum = sum + 2*i;
-       i++;
-    }
-    printf("Sum = %d", sum);
-    return 0;
-}
+// Q2 calculate sum of first n even natural numbers
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     int i = 1;
+//     int sum=0;
+//     while (i<=num)
+//     {
+//         sum = sum + (i*2);  
+//         i++;
+//     }
+//     printf("Sum=%d", sum);
+//     return 0;
+// }
 
-// Q3 sum of n odd natural numbers
-#include<stdio.h>
-int main(){
-    int n, i=1, sum = 0;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    while (i<=n)
-    {
-       sum = sum + 2*i-1;
-       i++;
-    }
-    printf("Sum = %d", sum);
-    return 0;
-}
+// Q3 calculate sum of first n odd natural numbers
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     int i=1;
+//     int sum=0;
+//     while (i<=num)
+//     {
+//         sum = sum + (i*2-1);
+//         i++;
+//     }
+//     printf("Sum=%d", sum);
+//     return 0; 
+// }
 
-// Q4 square of n natural numbers
-#include<stdio.h>
-int main(){
-    int n, i=1, sum = 0;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    while (i<=n)
-    {
-       sum = sum + i*i;
-       i++;
-    }
-    printf("Sum = %d", sum);
-    return 0;
-}
+// Q4 calculate sum of squares of first n natural numbers
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     int i=1;
+//     int sum=0;
+//     while (i<=num)
+//     {
+//         sum = sum + (i*i);
+//         i++;
+//     }
+//     printf("Sum=%d", sum);
+//     return 0;
+// }
 
-// Q3 cubes of n natural numbers
-#include<stdio.h>
-int main(){
-    int n, i=1, sum = 0;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    while (i<=n)
-    {
-       sum = sum + i*i*i;
-       i++;
-    }
-    printf("Sum = %d", sum);
-    return 0;
-}
-*/
+// Q5 calculate sum of cubes of first n natural numbers
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     int i=1;
+//     int sum=0;
+//     while (i<=num)
+//     {
+//         sum = sum + (i*i*i);
+//         i++;
+//     }
+//     printf("Sum=%d", sum);
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+

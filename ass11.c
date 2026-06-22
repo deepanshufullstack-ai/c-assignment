@@ -100,7 +100,7 @@
 //     return 0;
 // }
 
-// Q10 print 5 table
+// Q10 print 5 table 
 // #include<stdio.h>
 // int main(){
 //     int i=1;
