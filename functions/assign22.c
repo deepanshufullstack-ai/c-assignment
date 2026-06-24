@@ -54,13 +54,19 @@
 
 // Q5 print all prime factors of a given number
 // #include<stdio.h>
-// void findPrimeFactors(int num){
-    
+// void primeFactors(int n){
+//     int i;
+//     for(i=2; i<=n; i++){
+//         while(n%i==0){
+//             printf("%d", i);
+//             n=n/i;
+//         }
+//     }
 // }
 // int main(){
-//     int Num;
+//     int num;
 //     printf("Enter a number: ");
-//     scanf("%d", &Num);
-//     findPrimeFactors(Num);
+//     scanf("%d", &num);
+//     primeFactors(num);
 //     return 0;
 // }
