@@ -142,30 +142,22 @@
 // Q5 menu driven program
 // #include <stdio.h>
 // #include <stdlib.h>
-
 // int main() {
 //     int choice;
-
 //     while (1) {
 //         printf("\n1. Calculate LCM of two numbers");
 //         printf("\n2. Calculate the sum of digits of a number");
 //         printf("\n3. Volume of a cuboid");
 //         printf("\n4. Check whether a given number is prime or not");
 //         printf("\n5. Exit");
-
 //         printf("\n\nEnter your choice: ");
 //         scanf("%d", &choice);
-
 //         switch (choice) {
-
 //             case 1: {
 //                 int max, n1, n2;
-
 //                 printf("Enter two numbers: ");
 //                 scanf("%d %d", &n1, &n2);
-
 //                 max = (n1 > n2) ? n1 : n2;
-
 //                 while (1) {
 //                     if (max % n1 == 0 && max % n2 == 0) {
 //                         printf("LCM = %d\n", max);
@@ -175,31 +167,23 @@
 //                 }
 //                 break;
 //             }
-
 //             case 2: {
 //                 int sum = 0, digit, num;
-
 //                 printf("Enter a number: ");
 //                 scanf("%d", &num);
-
 //                 while (num > 0) {
 //                     digit = num % 10;
 //                     sum += digit;
 //                     num /= 10;
 //                 }
-
 //                 printf("Sum = %d\n", sum);
 //                 break;
 //             }
-
 //             case 3: {
 //                 int l, w, h, v;
-
 //                 printf("Enter the length, width, and height: ");
 //                 scanf("%d %d %d", &l, &w, &h);
-
 //                 v = l * w * h;
-
 //                 printf("Volume = %d\n", v);
 //                 break;
 //             }
