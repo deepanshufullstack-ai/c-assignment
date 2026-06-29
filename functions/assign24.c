@@ -45,30 +45,40 @@
 // }
 
 // Q3 print pascal triangle (TSRN)
+// #include<stdio.h>
+// int main(){
+//     return 0;
+// }
+
 // Q4 all armstrong number under two given numbers (TSRN)
-#include <stdio.h>
-void printArmstrong(int a, int b)
-{
-    int i, digit, sum, temp;
-    for(i=a; i<=b; i++){
-        temp=i;
-        sum=0;
-        while(temp>0){
-            digit=temp%10;
-            sum=sum+(digit*digit*digit);
-            temp=temp/10;
-        }
-        if(sum==i){
-            printf("%d\n", i);
-        }
-    }
-}
-int main()
-{
-    int num1, num2;
-    printf("Enter two numbers: ");
-    scanf("%d%d", &num1, &num2);
-    printArmstrong(num1, num2);
-    return 0;
-}
+// #include <stdio.h>
+// void printArmstrong(int a, int b)
+// {
+//     int i, digit, sum, temp;
+//     for(i=a; i<=b; i++){
+//         temp=i;
+//         sum=0;
+//         while(temp>0){
+//             digit=temp%10;
+//             sum=sum+(digit*digit*digit);
+//             temp=temp/10;
+//         }
+//         if(sum==i){
+//             printf("%d\n", i);
+//         }
+//     }
+// }
+// int main()
+// {
+//     int num1, num2;
+//     printf("Enter two numbers: ");
+//     scanf("%d%d", &num1, &num2);
+//     printArmstrong(num1, num2);
+//     return 0;
+// }
+
 // Q5 sum of a series
+// #include<stdio.h>
+// int main(){
+//     return 0;
+// }
