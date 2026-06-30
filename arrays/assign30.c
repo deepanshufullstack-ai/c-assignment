@@ -1,3 +1,4 @@
+// Q1 sort element of an array
 // #include<stdio.h>
 // int main(){
 //     int a[5], i, j, temp;
@@ -21,6 +22,7 @@
 //     }
 // }
 
+// Q2 second largest element
 // #include<stdio.h>
 // int main(){
 //     int a[5], i, j, temp;
@@ -46,6 +48,7 @@
 //         printf("Second largest element = %d\n", a[3]);
 // }
 
+// Q3 second smallest element
 // #include<stdio.h>
 // int main(){
 //     int a[5], i, j, temp;
@@ -71,6 +74,7 @@
 //         printf("Second Smallest element = %d\n", a[1]);
 // }
 
+// Q4 sort in desending order
 // #include<stdio.h>
 // int main(){
 //     int a[5], i, j, temp;
@@ -94,6 +98,7 @@
 //     }
 // }
 
+// Q5 copy the elements of one array into another array
 // #include<stdio.h>
 // int main(){
 //     int a[5], b[5], i;

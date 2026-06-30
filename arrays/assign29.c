@@ -1,3 +1,4 @@
+// Q1 calculate the sum of array elements
 // #include<stdio.h>
 // int main(){
 //     int a[10], i, sum=0;
@@ -14,6 +15,7 @@
 //     return 0;
 // }
 
+// Q2 calculate the average of array elements
 // #include<stdio.h>
 // int main(){
 //     int a[10], i, sum=0;
@@ -34,6 +36,7 @@
 //     return 0;
 // }
 
+// Q3 calculate sum of even elements of an array
 // #include<stdio.h>
 // int main(){
 //     int a[10], i, even=0, odd=0;
@@ -55,6 +58,7 @@
 //     return 0;
 // }
 
+// Q4 grestest number of an array
 // #include <stdio.h>
 // int main()
 // {
@@ -74,6 +78,7 @@
 //     printf("Max is %d", max);
 // }
 
+// Q5 smallest number of an array
 // #include<stdio.h>
 // int main(){
 //     int a[10], i, min;
