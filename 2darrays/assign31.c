@@ -80,34 +80,50 @@
 // }
 
 // Q4 
-// #include <stdio.h>
-// int main() {
-//     int size, i, num, direction;
-//     printf("Enter the size of an array: ");
-//     scanf("%d", &size);
-//     int a[size];
-//     int temp[size];
-//     printf("Enter %d array elements: ",size);
-//     for(i=0; i<size; i++){
+// #include<stdio.h>
+// int main(){
+//     int s, temp;
+//     printf("Enter the size or array: ");
+//     scanf("%d", &s);
+    
+//     int a[s];
+//     printf("Enter %d elements of array: ", s);
+//     for(int i=0; i<s; i++){
 //         scanf("%d", &a[i]);
 //     }
+    
+//     int p=0;
 //     printf("Enter number of position to rotate: ");
-//     scanf("%d", &num);
-//     printf("Enter rotate direction (0 left, 1 right): ");
-//     scanf("%d", &direction);
-//     num=num%size;
-//     if(direction==0){
-//         for(i=0; i<size; i++){
-//             temp[i]=a[(i+num)%size];
-//         }
+//     scanf("%d", &p);
+    
+//     int d=0;
+//     printf("Enter direction of rotation 0 for left, 1 for right: ");
+//     scanf("%d", &d);
+    
+//     p=p%s;
+    
+//     if(d==0){
+//        while(p--){
+//           temp=a[0]; 
+//           for(int i=0; i<s-1; i++){
+//               a[i]=a[i+1];
+//           }
+//           a[s-1]=temp;
+//        } 
 //     } else {
-//         for(i=0; i<size; i++){
-//             temp[(i+num)%size]=a[i];
+//         while(p--){
+//             temp = a[s - 1];
+//             for(int i = s - 1; i > 0; i--){
+//                 a[i] = a[i - 1];
+//             }
+//             a[0] = temp;
 //         }
 //     }
-//     for(i=0; i<size; i++){
-//         printf("%d ", temp[i]);
+    
+//     for(int i=0; i<s; i++){
+//         printf("%d", a[i]);
 //     }
+    
 //     return 0;
 // }
 
