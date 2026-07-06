@@ -1,4 +1,4 @@
-// Q1 
+// Q1 swap two elements in an array
 // #include<stdio.h>
 // int main()
 // {
@@ -29,7 +29,7 @@
 //     printf("\n");
 // }
 
-// Q2 
+// Q2 find duplicate elements in an array
 // #include<stdio.h>
 // int main(){
 //     int n, i, j, count=0;
@@ -55,7 +55,7 @@
 //     return 0;
 // }
 
-// Q3 
+// Q3 find unique elements in an array
 // #include<stdio.h>
 // int main(){
 //     int n, i, j, count;
@@ -84,7 +84,7 @@
 //     return 0;
 // }
 
-// Q4
+// Q4 merge two arrays and sort in descending order
 // #include<stdio.h>
 // int main(){
 //     int n, i, j, temp;

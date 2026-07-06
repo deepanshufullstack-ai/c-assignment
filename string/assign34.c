@@ -1,4 +1,4 @@
-// Q1
+// Q1 calculate length of string wihtout using strlen
 // #include<stdio.h>
 // int main(){
 //     char str[100] = "Ratlam";
@@ -8,7 +8,7 @@
 //     return 0;
 // }
 
-// Q2
+// Q2 count number of occurences of a character in a string
 // #include<stdio.h>
 // #include<string.h>
 // int main(){
@@ -29,7 +29,7 @@
 //     return 0;
 // }
 
-// Q3
+// Q3 count number of vowels in a string
 // #include<stdio.h>
 // #include<string.h>
 // int main(){
@@ -48,7 +48,7 @@
 //     return 0;
 // }
 
-// Q4
+// Q4 count number of spaces in a string
 // #include<stdio.h>
 // #include<string.h>
 // int main(){
@@ -67,7 +67,7 @@
 //     return 0;
 // }
 
-// Q5
+// Q5 convert a string to uppercase
 // #include<stdio.h>
 // #include<stdio.h>
 

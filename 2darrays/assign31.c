@@ -1,5 +1,5 @@
 
-// Q1
+// Q1 find greatest element in an array
 // #include <stdio.h>
 // int findGreatest(int a[], int size) {
 //   int largest = a[0];
@@ -24,7 +24,7 @@
 //   return 0;
 // }
 
-// Q2
+// Q2 find smallest element in an array
 // #include <stdio.h>
 // int findSmallest(int a[], int size) {
 //   int smallest = a[0];
@@ -49,7 +49,7 @@
 //   return 0;
 // }
 
-// Q3
+// Q3 sort an array
 // #include <stdio.h>
 // void sortArray(int a[], int size) {
 //   int temp;
@@ -79,7 +79,7 @@
 //   return 0;
 // }
 
-// Q4 
+// Q4 rotate an array
 // #include<stdio.h>
 // int main(){
 //     int s, temp;
@@ -127,7 +127,7 @@
 //     return 0;
 // }
 
-// Q5 
+// Q5 find first adjacent duplicate element
 // #include <stdio.h>
 // int main() {
 //     int size;
