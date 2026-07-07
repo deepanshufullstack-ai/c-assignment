@@ -109,3 +109,45 @@
 //     convertIntoLowercase(str);
 //     return 0;
 // }
+
+// Q5 compare two strings without case sensitivity
+// #include<stdio.h>
+// #include<string.h>
+// int main(){
+//     char str1[100], str2[100];
+//     printf("Enter first string: ");
+//     fgets(str1, 100, stdin);
+//     printf("Enter second string: ");
+//     fgets(str2, 100, stdin);
+    
+//     str1[strcspn(str1, "\n")] = '\0';
+//     str2[strcspn(str2, "\n")] = '\0';
+    
+//     int l1=0, l2=0;
+//     l1=strlen(str1);
+//     l2=strlen(str2);
+    
+//     if(l1!=l2){
+//         printf("Strings are not equal");
+//     } else {
+//         for(int i=0; i<l1; i++){
+//             if(str1[i]>='A' && str1[i]<='Z'){
+//                 str1[i]+=32;
+//             }
+            
+//             if(str2[i]>='A' && str2[i]<='Z'){
+//                 str2[i]+=32;
+//             }
+//         }
+//     }
+    
+//     int cmp=0;
+//     cmp=strcmp(str1, str2);
+    
+//     if(cmp==0){
+//         printf("string are equal");
+//     }else {
+//         printf("String are not equal");
+//     }
+//     return 0;
+// }
