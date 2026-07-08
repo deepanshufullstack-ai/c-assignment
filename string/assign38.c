@@ -104,3 +104,53 @@
 // }
 
 // Q5 do case insensitive string comparison
+// #include<stdio.h>
+// #include<string.h>
+// int main(){
+//     char str1[100], str2[100];
+//     printf("Enter first string: ");
+//     fgets(str1, 100, stdin);
+
+//     printf("Enter first string: ");
+//     fgets(str2, 100, stdin);
+    
+//     for(int i=0; str1[i]!='\0'; i++){
+//         if(str1[i]=='\n'){
+//             str1[i]='\0';
+//         }
+//     }
+    
+//     for(int i=0; str2[i]!='\0'; i++){
+//         if(str2[i]=='\n'){
+//             str2[i]='\0';
+//         }
+//     }
+    
+//     int l1=0, l2=0;
+//     l1=strlen(str1);
+//     l2=strlen(str2);
+    
+//     if(l1!=l2){
+//         printf("String are not equal");
+//     } else {
+//         for(int i=0; i<l1; i++){
+//             if(str1[i]>='A' && str1[i]<='Z'){
+//                 str1[i]+=32;
+//             }
+            
+//             if(str2[i]>='A' && str2[i]){
+//                 str2[i]+=32;
+//             }
+//         }
+//     }
+    
+//     int cam=strcmp(str1, str2);
+    
+//     if(cam){
+//         printf("Strings are equal");
+//     } else {
+//         printf("Strings are not equal");
+//     }
+//     return 0;
+// }
+
