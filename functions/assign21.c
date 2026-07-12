@@ -1,4 +1,3 @@
-
 // Q1 function to calculate area of circle (TSRS)
 // #include<stdio.h>
 // float calculateAreaOfCircle(int r){
