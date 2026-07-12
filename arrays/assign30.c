@@ -50,8 +50,8 @@
 //         printf("Second largest element = %d\n", a[3]);
 // }
 
-// Q3 second smallest element (sorting gives you first & second smallest
-// numbers) #include<stdio.h> int main(){
+// Q3 second smallest element (sorting gives you first & second smallest numbers) 
+// #include<stdio.h> int main(){
 //     int a[5], i, j, temp;
 //     printf("Enter 5 numbers: ");
 //     for(i=0; i<5; i++){
