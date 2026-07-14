@@ -96,6 +96,47 @@
 //   return 0;
 // }
 
+// #include<stdio.h>
+// int main(){
+//     int n, temp, d, sum=0, count=0, temp2, p=1;
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
+    
+//     temp=n;
+    
+//     while(temp>0){
+//         d=temp%10;
+//         count++;
+//         temp=temp/10;
+//     }
+
+//     temp2=n;
+    
+//     while(temp2>0){
+//         d=temp2%10;
+//         p=1;
+//         for(int i=1; i<=count; i++){
+//             p=p*d;
+//         }
+//         // while(count>0){
+//         //     p=p*d;
+//         //     count--;
+//         // }
+        
+//         sum=sum+p;
+//         temp2=temp2/10;
+//     }
+//     printf("Sum = %d\n", sum);
+    
+//     if(sum==n){
+//         printf("Armstrong");
+//     } else {
+//         printf("Not armstrong");
+//     }
+    
+//     return 0;
+// }
+
 
 
 
