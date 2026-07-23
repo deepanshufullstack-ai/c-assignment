@@ -89,3 +89,62 @@
 //     printf("Area of circle is: %.2f", area);
 //     return 0;
 // }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+void printHello(){
+    printf("Hello");
+}
+void printHelloWorld(){
+    printf("Hello\nStudents");
+}
+void printMySirG(){
+    printf("\"MySirG\"");
+}
+void printTeacherDay(){
+    printf("\"Teacher Day\"");
+}
+void sum(int a, int b){
+    int sum = 0;
+    sum=a+b;
+    printf("Sum is %d", sum);
+}
+void square(int c){
+    int square=0;
+    square=c*c;
+    printf("Square is %d", square);
+}
+void areaOfRectangle(int l, int w){
+    int area=0;
+    area=l*w;
+    printf("Area is %d", area);
+}
+void areaOfCircle(float r){
+    float area=0;
+    area=3.14*r*r;
+    printf("Area is %.2f", area);
+}
+int main() {
+    // printHello();
+    // printHelloWorld();
+    // printMySirG();
+    // printf("\\n");
+    // printf("\\r");
+    // printTeacherDay();
+    // int a=10, b=10;
+    // sum(a, b);
+    // int c;
+    // printf("Enter a number to find its square: ");
+    // scanf("%d", &c);
+    // square(c);
+    // int l, w;
+    // printf("Enter length or width of area: ");
+    // scanf("%d%d",&l,&w);
+    // areaOfRectangle(l, w);
+    // float r;
+    // printf("Enter radius of circle: ");
+    // scanf("%f", &r);
+    // areaOfCircle(r);
+    return 0;
+}

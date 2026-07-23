@@ -53,3 +53,63 @@
 //     printf("Profit/loss: %d", (sp-cp)*25);
 //     return 0;
 // }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+void calAvgThree(float a, float b, float c){
+    float avg=0;
+    avg=(a+b+c)/3;
+    printf("Average is %.2f", avg);
+}
+void calCircumference(float r){
+    float cir=0;
+    cir=2*3.14*r;
+    printf("Cir is %.2f", cir);
+}
+void calSI(float p, float r, float t){
+    float SI=0;
+    SI=(p*r*t)/100;
+    printf("SI is %.2f", SI);
+}
+void calVolCuboid(int l, int w, int h){
+    int vol=0;
+    vol=l*w*h;
+    printf("Vol is %d", vol);
+}
+void calProfitOrLoss(float cp, float sp){
+    float cp25=0, sp25=0, result=0;
+    cp25=(cp/12)*25;
+    sp25=(sp/12)*25;
+    result = sp25 - cp25;
+    if(result > 0){
+        printf("Profile = %.2f", result);
+    } else if(result < 0){
+        printf("Loss = %.2f", -result);
+    } else {
+        printf("No profit, No loss");
+    }
+}
+int main(){
+    // float a, b, c;
+    // printf("Enter three numbers to calculate avg: ");
+    // scanf("%f%f%f", &a, &b, &c);
+    // calAvgThree(a, b, c);
+    // float r;
+    // printf("Enter radius of circle: ");
+    // scanf("%f", &r);
+    // calCircumference(r);
+    // float p, r, t;
+    // printf("Enter p, r & t value to cal SI: ");
+    // scanf("%f%f%f", &p, &r, &t);
+    // calSI(p, r, t);
+    // int l, w, h;
+    // printf("Enter l, w & h of cuboid: ");
+    // scanf("%d%d%d", &l, &w, &h);
+    // calVolCuboid(l, w, h);
+    float cp, sp;
+    printf("Enter cost price & selling price of one dozen banana: ");
+    scanf("%f%f", &cp, &sp);
+    calProfitOrLoss(cp, sp);
+    return 0;
+}

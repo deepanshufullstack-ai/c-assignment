@@ -80,7 +80,10 @@ void makeNumberLastDigitZero(int n){
     x=x*10;
     printf("Number with zero digit %d", x);
 }
-void appendADigit(int a){}
+void appendADigit(int n2, int d1){
+    int result = n2 * 10 + d1;
+    printf("Result after appending digit: %d", result);
+}
 int main(){
     // int n;
     // printf("Enter a number: ");
@@ -97,9 +100,10 @@ int main(){
     // printf("Enter a number: ");
     // scanf("%d", &n1);
     // makeNumberLastDigitZero(n1);
-    int n2;
-    printf("Enter a number: ");
-    scanf("%d", &n2);
+    int n2, d1;
+    printf("Enter a number & a digit: ");
+    scanf("%d%d", &n2, &d1);
+    appendADigit(n2, d1); 
     return 0;
 }
 
