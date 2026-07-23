@@ -81,3 +81,58 @@
 //     printf("After swap: %d, %d", a, b);
 //     return 0;
 // }
+
+///////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+void sizeOfChar(char ch) { printf("%zu is the size of %c", sizeof(ch), ch); }
+void sizeOfReal(float f) { printf("%zu is the size of %f", sizeof(f), f); }
+void swap(int a, int b) {
+  // method 1
+  // int temp;
+  // printf("Before swap: %d %d\n", a, b);
+  // temp=a;
+  // a=b;
+  // b=temp;
+  // printf("After swap: %d %d", a, b);
+
+  // method 2
+  // printf("Before swap: %d %d\n", a, b);
+  // a=a+b;
+  // b=a-b;
+  // a=a-b;
+  // printf("After swap: %d %d\n", a, b);
+
+  // method 3
+  // printf("Before swap: %d %d\n", a, b);
+  // a=a*b;
+  // b=a/b;
+  // a=a/b;
+  // printf("After swap: %d %d\n", a, b);
+
+  // method 4
+  // printf("Before swap: %d %d\n", a, b);
+  // a=a^b;
+  // b=a^b;
+  // a=a^b;
+  // printf("After swap: %d %d\n", a, b);
+
+  // method 5
+  printf("Before swap: %d %d\n", a, b);
+  a = (b - a) + (b = a);
+  printf("After swap: %d %d\n", a, b);
+}
+int main() {
+  // char ch='c';
+  // sizeOfChar(ch);
+  // float f=34.00;
+  // sizeOfReal(f);
+  // char ch='A';
+  // printf("Before increment %c\n", ch);
+  // ch++;
+  // printf("After increment %c", ch);
+  // int a, b;
+  // printf("Enter two number: ");
+  // scanf("%d%d", &a, &b);
+  // swap(a, b);
+  return 0;
+}

@@ -56,3 +56,70 @@
 //     printf("before append a digit %d\nafter append a digit %d", n, r);
 //     return 0;
 // }
+
+/////////////////////////////////////////////////
+#include<stdio.h>
+void sumOfDigit(int n){
+    int d1, d2, d3, temp=n;
+    d1=n%10;
+    n=n/10;
+    d2=n%10;
+    n=n/10;
+    d3=n%10;
+    printf("Sum is %d", d1+d2+d3);
+}
+void sizeOfDataTypes(int a, char b, float c, double d){
+    printf("%zu is the size of %d\n", sizeof(a), a);
+    printf("%zu is the size of %c\n", sizeof(b), b);
+    printf("%zu is the size of %f\n", sizeof(c), c);
+    printf("%zu is the size of %lf\n", sizeof(d), d);
+}
+void makeNumberLastDigitZero(int n){
+    int x;
+    x=n/10;
+    x=x*10;
+    printf("Number with zero digit %d", x);
+}
+void appendADigit(int a){}
+int main(){
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // sumOfDigit(n);
+    // char ch='+';
+    // printf("%d", ch);
+    // int a=1;
+    // char b='a';
+    // float c=2.0;
+    // double d=3.0;
+    // sizeOfDataTypes(a, b, c, d);
+    // int n1;
+    // printf("Enter a number: ");
+    // scanf("%d", &n1);
+    // makeNumberLastDigitZero(n1);
+    int n2;
+    printf("Enter a number: ");
+    scanf("%d", &n2);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
