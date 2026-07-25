@@ -131,3 +131,97 @@
 //     }
 // }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+void printFiveTimes(int n){
+    int i=1;
+    while(i<=n){
+        printf("Hello\n");
+        i++;
+    }
+}
+void printFirstTenNaturals(int n1){
+    int i=1;
+    while(i<=n1){
+        printf("%d\n", i);
+        i++;
+    }
+}
+void printFirstTenNaturalsInReverse(int n2){
+    int i=n2;
+    while(i>0){
+        printf("%d\n", i);
+        i--;
+    }
+}
+void printOdd(int n2){
+    int i=1;
+    while(i<=n2){
+        printf("%d\n", i*2-1);
+        i++;
+    }
+}
+void printOddInRev(int n3){
+    int i=1;
+    while(i<=n3){
+        printf("%d\n", n3*2+1-2*i);
+        i++;
+    }
+}
+
+void printEven(int n4){
+    int i=1;
+    while(i<=n4){
+        printf("%d\n", i*2);
+        i++;
+    }
+}
+void printEvenInRev(int n5){
+    int i=1;
+    while(i<=n5){
+        printf("%d\n", n5*2+2-i*2);
+        i++;
+    }
+}
+
+void printSquaresOfTenNaturals(int n6){
+    int i=1;
+    while(i<=n6){
+        printf("%d\n", i*i);
+        i++;
+    }
+}
+void printCubesOfTenNaturals(int n7){
+    int i=1;
+    while(i<=n7){
+        printf("%d\n", i*i*i);
+        i++;
+    }
+}
+void printTableOfFive(int n8){
+    int i=1;
+    while(i<=10){
+        printf("%d\n", n8*i);
+        i++;
+    }
+}
+int main(){
+    // printFiveTimes(20);
+    // printFirstTenNaturals(20);
+    // printFirstTenNaturalsInReverse(20);
+    // printOdd(20);
+    // printOddInRev(20);
+    // printEven(20);
+    // printEvenInRev(20);
+    // printSquaresOfTenNaturals(20);
+    // printCubesOfTenNaturals(20);
+    printTableOfFive(10);
+    return 0;
+}
+
+
+
+
+
+

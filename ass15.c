@@ -98,3 +98,98 @@
 //     return 0;
 // }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+void printAllPrimeUnder100(){
+    int prime;
+    for(int i=2; i<=100; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            printf("%d\n", i);
+        }
+    }
+}
+
+void printPrimeBtwTwoNumbers(int a, int b){
+    int prime;
+    for(int i=a; i<=b; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            printf("%d\n", i);
+        }
+    }
+}
+void findNextPrime(int n){
+    int prime;
+    for(int i=n+1; ; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            printf("%d", i);
+            break;
+        }
+    }
+}
+void calHcf(int a1, int b1){
+    int temp;
+    while(b1!=0){
+        temp=b1;
+        b1=a1%b1;
+        a1=temp;
+    }
+    printf("HCF = %d\n", a1);
+}
+void checkCoPrime(int a2, int b2){
+    int temp, x=a2, y=b2, gcd;
+    while(y!=0){
+        temp=y;
+        y=x%y;
+        x=temp;
+    }
+    gcd=x;
+    if(gcd==1){
+        printf("Coprime number");
+    } else {
+        printf("No coprime number");
+    }
+}
+int main(){
+    // printAllPrimeUnder100();
+    // int a,b;
+    // printf("Enter two numbers: ");
+    // scanf("%d%d", &a, &b);
+    // printPrimeBtwTwoNumbers(a, b);
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // findNextPrime(n);
+    // int a1, b1;
+    // printf("Enter two numbers: ");
+    // scanf("%d%d", &a1, &b1);
+    // calHcf(a1, b1);
+    int a2, b2;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a2, &b2);
+    checkCoPrime(a2, b2);
+    return 0;
+}
+

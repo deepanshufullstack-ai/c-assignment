@@ -84,7 +84,55 @@
 //     return 0;
 // }
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+void calSumOfNaturals(int n){
+    int sum=0;
+    for(int i=1; i<=n; i++){
+        sum=sum+i;
+    }
+    printf("Sum is %d", sum);
+}
+void calSumOfEvenNaturals(int n1){
+    int sum=0;
+    for(int i=1; i<=n1; i++){
+        if(i%2==0){
+            sum=sum+i;
+        }
+    }
+    printf("Sum is %d", sum);
+}
+void calSumOfOddNaturals(int n2){
+    int sum=0;
+    for(int i=1; i<=n2; i++){
+        if(i%2!=0){
+            sum=sum+i;
+        }
+    }
+    printf("Sum is %d", sum);
+}
+void calSumOfSquares(int n3){
+    int sum=0;
+    for(int i=1; i<=n3; i++){
+        sum=sum+i*i;
+    }
+    printf("Sum is %d", sum);
+}
+void calSumOfCubes(int n3){
+    int sum=0;
+    for(int i=1; i<=n3; i++){
+        sum=sum+i*i*i;
+    }
+    printf("Sum is %d", sum);
+}
+int main(){
+    // calSumOfNaturals(5);
+    // calSumOfEvenNaturals(5);
+    // calSumOfOddNaturals(5);
+    // calSumOfSquares(3);
+    calSumOfCubes(2);
+    return 0;
+}
 
 
 
