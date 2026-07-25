@@ -49,3 +49,43 @@
 //     printf("Value after the executing this x=3<0&&5>0 statement is %d", x);
 //     return 0;
 // }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+void convertINRIntoUSD(float a){
+    printf(" INR %.2f is %.2f in USD", a, a/84.23);
+}
+void rotateDigitByOnePosition(int n){
+    int d1, d2, d3, temp=n, result;
+    d1=temp%10;
+    temp=temp/10;
+    printf("%d", d1);
+    
+    d2=temp%10;
+    temp=temp/10;
+    printf("%d", d2);
+    
+    d3=temp%10;
+    temp=temp/10;
+    printf("%d", d3);
+    
+    result = (d1*100)+(d3*10)+d2;
+    printf("\nRotated number is %d", result);
+}
+int main(){
+    // float a;
+    // printf("Enter a INR amount to convert into USD: ");
+    // scanf("%f", &a);
+    // convertINRIntoUSD(a);
+    // int n;
+    // printf("Enter a three digit number: ");
+    // scanf("%d", &n);
+    // rotateDigitByOnePosition(n);
+    int x=0;
+    printf("%d", x=10>8>4);
+    int y=0;
+    printf("%d", y=!2>-2);
+    int z=0;
+    printf("%d", z=3<0 && 5>0);
+    return 0;
+}

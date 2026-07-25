@@ -77,3 +77,73 @@
 //     }
 //     return 0;
 // }
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+void checkNumberIsThreeDigit(int n){
+    if((n>=100 && n<=999) || (n<=-100 && n>=-999)){
+        printf("Number is three digit");
+    } else {
+        printf("Number is not three digit");
+    }
+}
+void findGreater(int a, int b){
+    if(a>b){
+        printf("%d is greater", a);
+    } else if(b>a){
+        printf("%d is greater", b);
+    } else {
+        printf("%d, %d Both are same", a, b);
+    }
+}
+void checkRoots(int n1){
+    if(n1>0){
+        printf("Roots are real & distinct");
+    } else if(n1==0){
+        printf("Roots are real & equal");
+    } else {
+        printf("Roots are imaginary");
+    }
+}
+void leapYearOrNot(int year){
+    if((year%400 == 0) || (year%4 == 0) &&(year%100 != 0)){
+        printf("Leap Year");
+    } else {
+        printf("Not leap year");
+    }
+}
+void findGreatestBtwThree(int a1, int b1, int c1){
+    if(a1>b1 && a1>c1){
+        printf("%d is greatest", a1);
+    } else if(b1>a1 && b1>c1){
+        printf("%d is greatest", b1);
+    } else if(c1>a1 && c1>b1){
+        printf("%d is greatest", c1);
+    } else {
+        printf("All three numbers are same");
+    }
+}
+int main(){
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // checkNumberIsThreeDigit(n);
+    // int a,b;
+    // printf("Enter two numbers: ");
+    // scanf("%d%d", &a, &b);
+    // findGreater(a,b);
+    // int a1, b1, c1, root=0;
+    // printf("Enter three numbers: ");
+    // scanf("%d%d%d", &a1, &b1, &c1);
+    // root=b1*b1-4*a1*c1;
+    // checkRoots(root);
+    // int year;
+    // printf("Enter a year: ");
+    // scanf("%d", &year);
+    // leapYearOrNot(year);
+    int a1, b1, c1;
+    printf("Enter three numbers: ");
+    scanf("%d%d%d", &a1, &b1, &c1);
+    findGreatestBtwThree(a1, b1, c1);
+    return 0;
+}

@@ -69,3 +69,67 @@
 //     }
 //     return 0;
 // }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+void checkNumIsPosAndNeg(int n){
+    if(n>0){
+        printf("Number is positive");
+    } else {
+        printf("Number is Negative");
+    }
+}
+void checkDivByFive(int n1){
+    if(n1%5==0){
+        printf("Divisible by 5");
+    } else {
+        printf("Not divisible by 5");
+    }
+}
+void checkEvenOrOdd(int n2){
+    if(n2%2==0){
+        printf("Number is even");
+    } else {
+        printf("Number is odd");
+    }
+}
+void checkEvenOrOddWithoutModule(int n3){
+    if(n3/2*2==n3){
+        printf("Number is even");
+    } else {
+        printf("Number is odd");
+    }
+}
+void checkEvenOrOddUsingBitwise(int n4){
+    if(n4&1){
+        printf("Number is odd");
+    } else {
+        printf("Number is even");
+    }
+}
+
+int main(){
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // checkNumIsPosAndNeg(n);
+    // int n1;
+    // printf("Enter a number: ");
+    // scanf("%d", &n1);
+    // checkDivByFive(n1);
+    // int n2;
+    // printf("Enter a number: ");
+    // scanf("%d", &n2);
+    // checkEvenOrOdd(n2);
+    // int n3;
+    // printf("Enter a number: ");
+    // scanf("%d", &n3);
+    // checkEvenOrOddWithoutModule(n3);
+    int n4;
+    printf("Enter a number: ");
+    scanf("%d", &n4);
+    checkEvenOrOddUsingBitwise(n4);
+    return 0;
+}
