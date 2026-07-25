@@ -95,3 +95,64 @@
 //     }
 //     return 0;
 // }
+
+////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+void findProAndLosPercent(float cp, float sp){
+    int p, l, pp, lp;
+    if(sp>cp){
+        p=sp-cp;
+        pp=(p/cp)*100;
+        printf("Profit = %d\n", p);
+        printf("Profit percent = %d%\n", pp);
+    } else {
+        l=cp-sp;
+        lp=(l/cp)*100;
+        printf("Profit = %d\n", l);
+        printf("Profit percent = %d%\n", lp);
+    }
+}
+void passedOrFail(int h, int e, int m, int c, int p){
+    if(h>=33 && e>=33 && m>=33 && c>=33 && p>=33){
+        printf("Student is passed");
+    } else {
+        printf("Student is failed");
+    }
+}
+void checkLowAndUppCase(char ch){
+    if(ch>='a' && ch<='z'){
+        printf("Lowercase");
+    } else if(ch>='A' && ch<='Z'){
+        printf("Uppercase");
+    } else {
+        printf("Invalid");
+    }
+}
+void divisibleBy(int n){
+    if(n%3==0 && n%2==0){
+        printf("Divisible by 3 & 2");
+    } else if(n%7==0 && n%3==0){
+        printf("Divisible by 7 & 3");
+    } else {
+        printf("Not divisible");
+    }
+}
+int main(){
+    // float cp, sp;
+    // printf("Enter cp & sp of product: ");
+    // scanf("%f%f", &cp, &sp);
+    // findProAndLosPercent(cp, sp);
+    // int h, e, m, c, p;
+    // printf("Enter marks or h, e, m, c & p: ");
+    // scanf("%d%d%d%d%d", &h, &e, &m, &c, &p);
+    // passedOrFail(h, e, m, c, p);
+    // char ch;
+    // printf("Enter a character: ");
+    // scanf("%c", &ch);
+    // checkLowAndUppCase(ch);
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    divisibleBy(n);
+    return 0;
+}
