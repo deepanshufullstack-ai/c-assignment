@@ -206,3 +206,111 @@
 
 //     return 0;
 // }
+
+
+
+////////////////////////////////////////////////////////////////
+
+
+#include<stdio.h>
+void findNthTermOfFibonacci(int n){
+    int a=0, b=1, c;
+    if(n==a){
+        printf("%d is first fibonacci number", n);
+    } else if(n==b){
+        printf("%d is second fibonacci number", n);
+    } else {
+        for(int i=2; i<=n; i++){
+            c=a+b;
+            a=b;
+            b=c;
+        }
+        printf("%d is the %dth term of fibonacci series", b, n);
+    }
+}
+
+void printFirstNTermsOfFibonacciSeries(int n1){
+    int a=0, b=1, c;
+    for(int i=1; i<=n1; i++){
+        printf("%d\n", a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
+}
+
+void isFibonacciOrNot(int n2){
+    int a=0, b=1, c;
+    
+    while(b<n2){
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    
+    if(b==n2){
+        printf("Fibonacci number");
+    } else {
+        printf("Not fibonacci number");
+    }
+}
+
+void isArmStrongOrNot(int n3) {
+    int temp1, temp2, digit;
+    int count = 0, power, sum = 0;
+
+    temp1 = n3;
+
+    while (temp1 > 0) {
+        digit = temp1 % 10;
+        count++;
+        temp1 = temp1 / 10;
+    }
+
+    temp2 = n3;
+
+    while (temp2 > 0) {
+        digit = temp2 % 10;
+
+        power = 1;
+        for (int i = 1; i <= count; i++) {
+            power = power * digit;
+        }
+
+        sum = sum + power;
+        temp2 = temp2 / 10;
+    }
+
+    // if (n3 == sum) {
+    //     printf("Armstrong");
+    // } else {
+    //     printf("Not Armstrong");
+    // }
+    if(n3==sum){
+        printf("%d\n", n3);
+    }
+}
+
+
+int main(){
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // findNthTermOfFibonacci(n);
+    // int n1; 
+    // printf("Enter a number: ");
+    // scanf("%d", &n1);
+    // printFirstNTermsOfFibonacciSeries(n1);
+    // int n2;
+    // printf("Enter a number: ");
+    // scanf("%d", &n2);
+    // isFibonacciOrNot(n2);
+    // int n3;
+    // printf("Enter a number: ");
+    // scanf("%d", &n3);
+    // isArmStrongOrNot(n3);
+    for(int i=1; i<=1000; i++){
+        isArmStrongOrNot(i);
+    }
+    return 0;
+}
