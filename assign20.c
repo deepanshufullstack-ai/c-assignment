@@ -224,3 +224,246 @@
 
 //     return 0;
 // }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+#include <stdlib.h>
+void gradingSystem(int m)
+{
+    switch (m)
+    {
+    case 90 ... 100:
+        printf("Student obtained grade a");
+        break;
+    case 80 ... 89:
+        printf("Student obtained grade b");
+        break;
+    case 70 ... 79:
+        printf("Student obtauned grade c");
+        break;
+    case 60 ... 69:
+        printf("Student obtained grade d");
+        break;
+    case 50 ... 59:
+        printf("Student obtained grade e");
+        break;
+    case 1 ... 49:
+        printf("Student obtained grade f");
+        break;
+    default:
+        printf("Invalid marks");
+    }
+}
+void calculator()
+{
+    int choice;
+    while (1)
+    {
+        printf("\n1 for find factorial of number");
+        printf("\n2 for check even or odd");
+        printf("\n3 for calculate area of circle");
+        printf("\n4 calculate sum of n natural numbers");
+        printf("\n5 exit");
+
+        printf("\n\nEnter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            int num, fact = 1;
+            printf("Enter a number: ");
+            scanf("%d", &num);
+            while (num >= 1)
+            {
+                fact = fact * num;
+                num--;
+            }
+            printf("Factorial is %d\n", fact);
+            break;
+
+        case 2:
+            int num1;
+            printf("Enter a number: ");
+            scanf("%d", &num1);
+            if (num1 % 2 == 0)
+            {
+                printf("Even");
+            }
+            else
+            {
+                printf("Odd");
+            }
+            break;
+
+        case 3:
+            float radius, area;
+            printf("Enter radius of circle: ");
+            scanf("%f", &radius);
+            area = 3.14 * radius * radius;
+            printf("Area of circle is %f", area);
+            break;
+
+        case 4:
+            int num2, sum = 0;
+            printf("Enter a number: ");
+            scanf("%d", &num2);
+            for (int i = 1; i <= num2; i++)
+            {
+                sum = sum + i;
+            }
+            printf("Sum is %d", sum);
+            break;
+
+        case 5:
+            exit(0);
+
+        default:
+            printf("Invalid case");
+        }
+    }
+}
+void checkAlphabet(char ch)
+{
+    switch (ch)
+    {
+    case 'A' ... 'Z':
+        printf("Uppercase");
+        break;
+
+    case 'a' ... 'z':
+        printf("Lowercase");
+        break;
+
+    case '0' ... '9':
+        printf("Digit");
+        break;
+
+    default:
+        printf("Special character");
+    }
+}
+void checkVowel(char ch)
+{
+    switch (ch)
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+        printf("Vowel");
+        break;
+
+    default:
+        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+        {
+            printf("Consonent");
+        }
+        else
+        {
+            printf("May be number or May be special character");
+        }
+    }
+}
+void newCalculator(){
+    int choice;
+    while(1){
+        printf("\n\nChoose 1 for find LCM of two numbers");
+        printf("\nChoose 2 for calculating sum of digit of number");
+        printf("\nChoose 3 to calculate volume of cuboid");
+        printf("\nChoose 4 to check prime or not");
+        printf("\nChoose 5 to exit");
+        
+        printf("\n\nEnter your choice here: ");
+        scanf("%d", &choice);
+        
+        switch(choice){
+            case 1: 
+            int num1, num2, max;
+            printf("Enter two number: ");
+            scanf("%d%d", &num1, &num2);
+            max=num1>num2 ? num1 : num2;
+            while(1){
+                if(max%num1==0 && max%num2==0){
+                    printf("LCM is %d", max);
+                    break;
+                }
+                max++;
+            }
+            break;
+            
+            case 2:
+            int n, d, s;
+            printf("Enter a number: ");
+            scanf("%d", &n);
+            while(n>0){
+                d=n%10;
+                s=s+d;
+                n=n/10;
+            }
+            printf("Sum of digit is %d", s);
+            break;
+            
+            case 3:
+            int h, w, l, v;
+            printf("Enter h, w or l of cuboid: ");
+            scanf("%d%d%d", &h, &w, &l);
+            v=h*w*l;
+            printf("Volume of cuboid is %d", v);
+            break;
+            
+            case 4:
+            int n2, prime;
+            printf("Enter a number: ");
+            scanf("%d", &n2);
+            if(n2<2){
+                prime=0;
+            } else {
+                for(int i=2; i<=n2-1; i++){
+                    if(n2%i==0){
+                        prime=1;
+                    }
+                }
+            }
+            
+            if(prime==0){
+                printf("prime number");
+            } else {
+                printf("Not prime number");
+            }
+            break;
+            
+            case 5:
+            exit(0);
+            
+            default: 
+            printf("Invalid case");
+        }
+        
+    }
+}
+int main()
+{
+    // int m;
+    // printf("Enter marks: ");
+    // scanf("%d", &m);
+    // gradingSystem(m);
+    // calculator();
+    // char ch;
+    // printf("Enter a character: ");
+    // scanf("%c", &ch);
+    // checkAlphabet(ch);
+    // char ch1;
+    // printf("Enter a character: ");
+    // scanf("%c", &ch1);
+    // checkVowel(ch1);
+    newCalculator();
+    return 0;
+}

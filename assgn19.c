@@ -215,3 +215,230 @@
 //         printf("Invalid");
 //     }
 // }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<stdlib.h>
+void printMonthDays(int n){
+    switch(n){
+        case 1:
+        printf("31 days");
+        break;
+        case 2:
+        printf("28 or 29 days");
+        break;
+        case 3: 
+        printf("31 days");
+        break;
+        case 4:
+        printf("30 days");
+        break;
+        case 5:
+        printf("31 days");
+        break;
+        case 6:
+        printf("30 days");
+        break;
+        case 7:
+        printf("31 days");
+        break;
+        case 8: 
+        printf("31 days");
+        break;
+        case 9:
+        printf("30 days");
+        break;
+        case 10:
+        printf("31 days");
+        break;
+        case 11:
+        printf("30 days");
+        break;
+        case 12:
+        printf("31 days");
+        break;
+        default: 
+        printf("Invalid month");
+    }
+}
+void calculator(){
+    int a, b, c;
+    while(1){
+        printf("\n1. Addition");
+        printf("\n2. Subtraction ");
+        printf("\n3. Multiplication");
+        printf("\n4. Devision");
+        printf("\n5. Exit");
+        
+        printf("\n\nEnter your choice: ");
+        scanf("%d", &c);
+        
+        switch(c){
+            case 1: 
+            a=0, b=0;
+            printf("Enter two number: ");
+            scanf("%d%d", &a, &b);
+            printf("Addition is %d\n", a+b);
+            break;
+            
+            case 2:
+            a=0, b=0;
+            printf("Enter two number: ");
+            scanf("%d%d", &a, &b);
+            printf("Subtraction is %d\n", a-b);
+            break;
+            
+            case 3: 
+            a=0, b=0;
+            printf("Enter two number: ");
+            scanf("%d%d", &a, &b);
+            printf("Multiplication is %d\n", a*b);
+            break;
+            
+            case 4:
+            a=0, b=0;
+            printf("Enter two number: ");
+            scanf("%d%d", &a, &b);
+            printf("Devision is %d\n", a/b);
+            break;
+            
+            case 5:
+            exit(0);
+            
+            default: 
+            printf("Invalid case");
+            
+        }
+    }
+}
+void greetWithDay(int n1){
+    switch(n1){
+        case 1:
+        printf("Happy monday");
+        break;
+        
+        case 2:
+        printf("Namaste tuesday");
+        break;
+        
+        case 3:
+        printf("Jai shree ganesh");
+        break;
+        
+        case 4:
+        printf("Good Morning");
+        break;
+        
+        case 5:
+        printf("Weekend ki khushboo");
+        break;
+        
+        case 6:
+        printf("Jai shanidev");
+        break;
+        
+        case 7:
+        printf("So jao aaj to");
+        break;
+        
+        default: 
+        printf("Invalid case");
+    }
+}
+void newCalculator(){
+    int n, a, b, c;
+    while(1){
+        printf("\n\n1. Check isosceles triangle");
+        printf("\n2. Check right angle triangle");
+        printf("\n3. Check equiletral triangle");
+        printf("\n4. Exit");
+        
+        printf("\n\nEnter your choice: ");
+        scanf("%d", &n);
+        
+        switch(n){
+            case 1:
+            a=0, b=0, c=0;
+            printf("Enter sides of triangle: ");
+            scanf("%d%d%d", &a, &b, &c);
+            if(a+b>c && b+c>a && c+a>b){
+                if(a==b || a==c || b==c){
+                    printf("Its isosceles triangle");
+                } else {
+                    printf("Its not isosceles triangle");
+                }
+            }
+            break;
+            
+            case 2:
+            a=0, b=0, c=0;
+            printf("Enter sides of triangle: ");
+            scanf("%d%d%d", &a, &b, &c);
+            if(a+b>c && b+c>a && c+a>b){
+                if(a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a){
+                    printf("Its right angle triangle");
+                } else {
+                    printf("Its not right angle triangle");
+                }
+            }
+            break;
+            
+            case 3:
+            a=0, b=0, c=0;
+            printf("Enter sides of triangle: ");
+            scanf("%d%d%d", &a, &b, &c);
+            if(a+b>c && b+c>a && c+a>b){
+                if(a==b && a==c){
+                    printf("Its equiletral triangle");
+                } else {
+                    printf("Its not equiletral triangle");
+                }
+            }
+            break;
+            
+            case 4:
+            exit(0);
+            
+            default:
+            printf("Invalid case");
+        }
+    }
+}
+void status(int n2){
+    switch(n2){
+        case 1:
+        printf("Good");
+        break;
+        
+        case 2:
+        printf("Better");
+        break;
+        
+        case 3:
+        printf("Best");
+        break;
+        
+        default:
+        printf("Invalid");
+    }
+}
+int main() {
+    // int n;
+    // printf("Enter a number of month: ");
+    // scanf("%d", &n);
+    // printMonthDays(n);
+    // calculator();
+    // int n1;
+    // printf("Enter a number of week: ");
+    // scanf("%d", &n1);
+    // greetWithDay(n1);
+    // newCalculator();
+    int n2;
+    printf("Enter a number: ");
+    scanf("%d", &n2);
+    status(n2);
+    return 0;
+}
