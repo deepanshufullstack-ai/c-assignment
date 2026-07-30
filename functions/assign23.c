@@ -116,3 +116,121 @@
 //     findNPrimes(num);
 //     return 0;
 // }
+
+
+//////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<stdlib.h>
+int calLcm(int n1, int n2){
+    int max;
+    max=n1>n2 ? n1: n2;
+    while(1){
+        if(max%n1==0 && max%n2==0){
+            return max;
+        }
+        max++;
+    }
+    return 0;
+}
+
+int calHcf(int n3, int n4){
+    int temp;
+    while(n4 != 0){
+        temp=n4;
+        n4=n3%n4;
+        n3=temp;
+    }
+    return n3;
+}
+
+int checkPrimeOrNot(int n){
+    for(int i=2; i<n; i++){
+        if(n%i==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int findNextPrime(int n){
+    int prime;
+    for(int i=n+1; ; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            return i;
+            break;
+        }
+    }
+    return 0;
+}
+
+void primeUnder(int n){
+    int prime;
+    for(int i=1; i<=n; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            printf("%d", i);
+        }
+    }
+}
+
+void nPrimes(int n){
+    int prime, count=1;
+    for(int i=2; ; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            printf("%d\n", i);
+            count++;
+        }
+        
+        if(count==11){
+            exit(0);
+        }
+    }
+}
+int main(){
+    // int n1, n2;
+    // printf("Enter two number: ");
+    // scanf("%d%d", &n1, &n2);
+    // printf("LCM is %d", calLcm(n1, n2));
+    
+    // int n3, n4;
+    // printf("Enter two number: ");
+    // scanf("%d%d", &n3, &n4);
+    // printf("LCF is %d", calHcf(n3, n4));
+    
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // printf("%d", checkPrimeOrNot(n));
+    
+    // int num;
+    // printf("Enter a number: ");
+    // scanf("%d", &num);
+    // printf("%d", findNextPrime(num));
+    
+    // primeUnder(10);
+    
+    nPrimes(10);
+    
+    return 0;
+}

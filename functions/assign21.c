@@ -83,3 +83,60 @@
 //     printOddNaturalNumbers(Num);
 //     return 0;
 // }
+
+
+///////////////////////////////////////////////////////
+#include <stdio.h>
+float calAreaOfCir(float r){
+    float a=0;
+    a=3.14*r*r;
+    return a;
+}
+
+float calSI(float p, float r, float t){
+    float SI=0;
+    SI=(p*r*t)/100;
+    return SI;
+}
+
+int checkEvenOrOdd(int n){
+    if(n%2==0){
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+void printNaturals(int n){
+    for(int i=1; i<=n; i++){
+        printf("%d\n", i);
+    }
+}
+
+void printOddNaturals(int n){
+    for(int i=1; i<=n; i++){
+        printf("%d\n", i*2-1);
+    }
+}
+int main() {
+    // float r;
+    // printf("Enter radius: ");
+    // scanf("%f", &r);
+    // printf("%.2f", calAreaOfCir(r));
+    
+    // float p, r, t;
+    // printf("Enter p, r & t: ");
+    // scanf("%f%f%f", &p, &r, &t);
+    // printf("%.2f", calSI(p, r, t));
+    
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // printf("%d", checkEvenOrOdd(n));
+    
+    // printNaturals(10);
+    
+    // printOddNaturals(10);
+    
+    return 0;
+}

@@ -70,3 +70,53 @@
 //     primeFactors(num);
 //     return 0;
 // }
+
+
+///////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+int calFact(int n){
+    int f=1;
+    while(n>0){
+        f=f*n;
+        n--;
+    }
+    return f;
+}
+
+int digitIsAvailableOrNot(int n1, int d){
+    int d1;
+    while(n1>0){
+        d1=n1%10;
+        n1=n1/10;
+        if(d1==d){
+            return 1;
+        }
+    }
+    return 0;
+}
+
+int printAllPrimeFact(int n){
+    for(int i=2; i<=n; i++){
+        while(n%i==0){
+            printf("%d\n", i);
+            n=n/i;
+        }
+    }
+}
+int main() {
+    // int n;
+    // printf("Enter a number: ");
+    // scanf("%d", &n);
+    // printf("%d", calFact(n));
+    
+    // int n1, d;
+    // printf("Enter a number or a digit: ");
+    // scanf("%d%d", &n1, &d);
+    // printf("%d", digitIsAvailableOrNot(n1, d));
+    
+    int n2;
+    printf("Enter a number: ");
+    scanf("%d", &n2);
+    printAllPrimeFact(n2);
+    return 0;
+}

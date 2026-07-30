@@ -82,3 +82,77 @@
 // int main(){
 //     return 0;
 // }
+
+
+/////////////////////////////////////////////////////////
+
+#include<stdio.h>
+void printPrimeBetweenTwoNumbers(int a, int b){
+    if(a<=1 || b<=1){
+        printf("Please enter greater numbers");
+    }
+    int prime;
+    for(int i=a; i<=b; i++){
+        prime=1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                prime=0;
+                break;
+            }
+        }
+        if(prime){
+            printf("%d\n", i);
+        }
+    }
+}
+
+void nFibonacci(int n){
+    int a=0, b=1, c;
+    for(int i=1; i<=n; i++){
+        printf("%d\n", a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
+}
+
+void isArmStrongOrNot(int n3) {
+    int temp1, temp2, digit;
+    int count = 0, power, sum = 0;
+
+    temp1 = n3;
+
+    while (temp1 > 0) {
+        digit = temp1 % 10;
+        count++;
+        temp1 = temp1 / 10;
+    }
+
+    temp2 = n3;
+
+    while (temp2 > 0) {
+        digit = temp2 % 10;
+
+        power = 1;
+        for (int i = 1; i <= count; i++) {
+            power = power * digit;
+        }
+
+        sum = sum + power;
+        temp2 = temp2 / 10;
+    }
+
+    if(n3==sum){
+        printf("%d\n", n3);
+    }
+}
+
+
+int main(){
+    // printPrimeBetweenTwoNumbers(10, 20);
+    // nFibonacci(10);
+    for(int i=1; i<=1000; i++){
+        isArmStrongOrNot(i);
+    }
+    return 0;
+}
