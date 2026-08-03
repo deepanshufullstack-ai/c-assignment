@@ -50,8 +50,8 @@
 //         printf("Second largest element = %d\n", a[3]);
 // }
 
-// Q3 second smallest element (sorting gives you first & second smallest numbers) 
-// #include<stdio.h> int main(){
+// Q3 second smallest element (sorting gives you first & second smallest
+// numbers) #include<stdio.h> int main(){
 //     int a[5], i, j, temp;
 //     printf("Enter 5 numbers: ");
 //     for(i=0; i<5; i++){
@@ -155,9 +155,8 @@
 //   int a[5], i, smallest, secondSmallest;
 //   printf("Enter 5 numbers: ");
 
-
 //   for (i = 0; i < 5; i++) {
-     
+
 //     scanf("%d", &a[i]);
 //   }
 
@@ -167,8 +166,8 @@
 //       smallest = a[i];
 //     }
 //   }
-  
-//     secondSmallest = 99999;  
+
+//     secondSmallest = 99999;
 
 //     for(i = 0; i < 5; i++)
 //     {
@@ -181,128 +180,127 @@
 //   printf("Second smallest element is %d\n", secondSmallest);
 // }
 
-
-void sortArrayElements(int a[]){
-    int temp;
-    for(int i=0; i<=4; i++){
-        for(int j=i+1; j<=4; j++){
-            if(a[i]>a[j]){
-                temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
-            }
-        }
+void sortArrayElements(int a[]) {
+  int temp;
+  for (int i = 0; i <= 4; i++) {
+    for (int j = i + 1; j <= 4; j++) {
+      if (a[i] > a[j]) {
+        temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+      }
     }
+  }
 
-    for(int i=0; i<=4; i++){
-        printf("%d ", a[i]);
-    }
+  for (int i = 0; i <= 4; i++) {
+    printf("%d ", a[i]);
+  }
 }
 
-void findSecondLargest(int a[]){
-    int lrg, slrg;
-    lrg=slrg=a[0];
-    for(int i=0; i<=4; i++){
-        if(a[i]>lrg){
-            lrg=a[i];
-        }
+void findSecondLargest(int a[]) {
+  int lrg, slrg;
+  lrg = slrg = a[0];
+  for (int i = 0; i <= 4; i++) {
+    if (a[i] > lrg) {
+      lrg = a[i];
     }
+  }
 
-    for(int i=0; i<=4; i++){
-        if(a[i]>slrg && a[i] != lrg){
-            slrg=a[i];
-        }
+  for (int i = 0; i <= 4; i++) {
+    if (a[i] > slrg && a[i] != lrg) {
+      slrg = a[i];
     }
+  }
 
-    printf("Largest & secondLargest is %d and %d", lrg, slrg);    
+  printf("Largest & secondLargest is %d and %d", lrg, slrg);
 }
 
-void findSecondSmallest(int a[]){
-    int sml, ssml;
-    sml=a[0];
-    for(int i=0; i<=4; i++){
-        if(a[i]<sml){
-            sml=a[i];
-        }
+void findSecondSmallest(int a[]) {
+  int sml, ssml;
+  sml = a[0];
+  for (int i = 0; i <= 4; i++) {
+    if (a[i] < sml) {
+      sml = a[i];
     }
+  }
 
-    ssml=99999;
-    for(int i=0; i<=4; i++){
-        if(a[i]>sml && a[i] < ssml){
-            ssml=a[i];
-        }
+  ssml = 99999;
+  for (int i = 0; i <= 4; i++) {
+    if (a[i] > sml && a[i] < ssml) {
+      ssml = a[i];
     }
+  }
 
-    printf("Smallest & secondSmallest is %d and %d", sml, ssml);    
+  printf("Smallest & secondSmallest is %d and %d", sml, ssml);
 }
 
-void copyArrayElements(int a[]){
-    int b[8];
-    for(int i=0; i<=7; i++){
-        b[i]=a[i];
-    }
-    
-    for(int i=0; i<=7; i++){
-        printf("%d ", a[i]);
-    }
+void copyArrayElements(int a[]) {
+  int b[8];
+  for (int i = 0; i <= 7; i++) {
+    b[i] = a[i];
+  }
 
-    for(int i=0; i<=7; i++){
-        printf("\n%d ", b[i]);
-    }
+  for (int i = 0; i <= 7; i++) {
+    printf("%d ", a[i]);
+  }
+
+  for (int i = 0; i <= 7; i++) {
+    printf("\n%d ", b[i]);
+  }
 }
 
-void sortArrayElementsInDes(int a[]){
-    int temp;
-    for(int i=0; i<=4; i++){
-        for(int j=i+1; j<=4; j++){
-            if(a[i]<a[j]){
-                temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
-            }
-        }
+void sortArrayElementsInDes(int a[]) {
+  int temp;
+  for (int i = 0; i <= 4; i++) {
+    for (int j = i + 1; j <= 4; j++) {
+      if (a[i] < a[j]) {
+        temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+      }
     }
+  }
 
-    for(int i=0; i<=4; i++){
-        printf("%d ", a[i]);
-    }
+  for (int i = 0; i <= 4; i++) {
+    printf("%d ", a[i]);
+  }
 }
 
-#include<stdio.h>
-int main(){
-    // int a[5];
-    // printf("Enter 5 elements: ");
-    // for(int i=0; i<=4; i++){
-    //     scanf("%d", &a[i]);
-    // }
-    // sortArrayElements(a);
+#include <stdio.h>
+int main() {
+  // int a[5];
+  // printf("Enter 5 elements: ");
+  // for(int i=0; i<=4; i++){
+  //     scanf("%d", &a[i]);
+  // }
+  // sortArrayElements(a);
 
-    // int a[5];
-    // printf("Enter 5 elements: ");
-    // for(int i=0; i<=4; i++){
-    //     scanf("%d", &a[i]);
-    // }
-    // findSecondLargest(a);
+  // int a[5];
+  // printf("Enter 5 elements: ");
+  // for(int i=0; i<=4; i++){
+  //     scanf("%d", &a[i]);
+  // }
+  // findSecondLargest(a);
 
-    // int a[5];
-    // printf("Enter 5 elements: ");
-    // for(int i=0; i<=4; i++){
-    //     scanf("%d", &a[i]);
-    // }
-    // findSecondSmallest(a);
+  // int a[5];
+  // printf("Enter 5 elements: ");
+  // for(int i=0; i<=4; i++){
+  //     scanf("%d", &a[i]);
+  // }
+  // findSecondSmallest(a);
 
-    // int a[8];
-    // printf("Enter 8 elements: ");
-    // for(int i=0; i<=7; i++){
-    //     scanf("%d", &a[i]);
-    // }
-    // copyArrayElements(a);
+  // int a[8];
+  // printf("Enter 8 elements: ");
+  // for(int i=0; i<=7; i++){
+  //     scanf("%d", &a[i]);
+  // }
+  // copyArrayElements(a);
 
-    int a[5];
-    printf("Enter 5 numbers: ");
-    for(int i=0; i<=4; i++){
-        scanf("%d", &a[i]);
-    }
-    sortArrayElementsInDes(a);
-    return 0;
+  int a[5];
+  printf("Enter 5 numbers: ");
+  for (int i = 0; i <= 4; i++) {
+    scanf("%d", &a[i]);
+  }
+  sortArrayElementsInDes(a);
+  return 0;
 }

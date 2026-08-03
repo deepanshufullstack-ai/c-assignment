@@ -91,7 +91,7 @@ int factorial(int n){
     return fact;
 }
 
-int factorial(int n){
+int factorial1(int n){
     int fact=1;
     for(int i=1; i<=n; i++){
         fact=fact*i;
@@ -100,7 +100,7 @@ int factorial(int n){
 }
 
 int permutation(int n, int r){
-    return factorial(n)/factorial(n-r);
+    return factorial1(n)/factorial1(n-r);
 }
 
 int digitIsAvailableOrNot(int n1, int d){
