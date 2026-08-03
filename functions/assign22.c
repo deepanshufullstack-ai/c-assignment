@@ -83,6 +83,26 @@ int calFact(int n){
     return f;
 }
 
+int factorial(int n){
+    int fact=1;
+    for(int i=1; i<=n; i++){
+        fact=fact*i;
+    }
+    return fact;
+}
+
+int factorial(int n){
+    int fact=1;
+    for(int i=1; i<=n; i++){
+        fact=fact*i;
+    }
+    return fact;
+}
+
+int permutation(int n, int r){
+    return factorial(n)/factorial(n-r);
+}
+
 int digitIsAvailableOrNot(int n1, int d){
     int d1;
     while(n1>0){
@@ -103,11 +123,39 @@ int printAllPrimeFact(int n){
         }
     }
 }
+
+
 int main() {
     // int n;
     // printf("Enter a number: ");
     // scanf("%d", &n);
     // printf("%d", calFact(n));
+
+    // int num, r, combination;
+    // printf("Enter value of n: ");
+    // scanf("%d", &num);
+    // printf("Enter value of r: ");
+    // scanf("%d", &r);
+
+    // int num1, r1;
+    // printf("Enter value of n: ");
+    // scanf("%d", &num1);
+    
+    // printf("Enter value of r: ");
+    // scanf("%d", &r1);
+    
+    // if(r1>num1){
+    //     printf("Invalid input! r can't be greater than n");
+    // } else {
+    //     printf("Permutation (%dp%d)=%d", num1, r1, permutation(num1, r1));
+    // }
+    
+    // if(r>num){
+    //     printf("Invalid input! r can't be greater than n");
+    // } else {
+    //     combination = factorial(num)/(factorial(r)*factorial(num-r));
+    //     printf("Combination (%dc%d)=%d", num, r, combination);
+    // }
     
     // int n1, d;
     // printf("Enter a number or a digit: ");

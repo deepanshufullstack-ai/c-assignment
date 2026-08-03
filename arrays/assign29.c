@@ -95,3 +95,88 @@
 //     }
 //     printf("Min is %d", min);
 // }
+
+
+
+#include<stdio.h>
+void calSumOfArrayElements(int a[]){
+    int sum=0;
+    for(int i=0; i<=9; i++){
+        sum=sum+a[i];
+    }
+    printf("Sum is %d", sum);
+}
+
+void calAvgOfArrayElements(int a[]){
+    float avg=0, sum=0;
+    int i;
+    for(i=0; i<=9; i++){
+        sum=sum+a[i];
+    }
+    avg=sum/i;
+    printf("Avg is %.2f\n", avg);
+    printf("Last iteration is %d\n", i);
+}
+
+void calSumOfEvenArrayElements(int a[]){
+    int i, sum=0;
+    for(i=0; i<=4; i++){
+        if(a[i]%2==0){
+            sum=sum+a[i];
+        } else {
+            continue;
+        }
+    }
+    printf("Sum is %d", sum);
+}
+
+void findGreatestInArray(int a[]){
+    int grt=a[0];
+    for(int i=0; i<=9; i++){
+        if(a[i]>grt){
+            grt=a[i];
+        }
+    }
+    printf("Greatest in array: %d", grt);
+}
+
+void findSmallestInArray(int a[]){
+    int sml=a[0];
+    for(int i=0; i<=9; i++){
+        if(a[i]<sml){
+            sml=a[i];
+        }
+    }
+    printf("Smallest in array: %d", sml);
+}
+
+int main(){
+    // int a[10];
+    // printf("Enter 10 numbers: ");
+    // for(int i=0; i<=9; i++){
+    //     scanf("%d", &a[i]);
+    // }
+    // calSumOfArrayElements(a);
+
+    // int a[10];
+    // printf("Enter 10 numbers: ");
+    // for(int i=0; i<=9; i++){
+    //     scanf("%d", &a[i]);
+    // }
+    // calAvgOfArrayElements(a);
+
+    // int a[5];
+    // printf("Enter 5 numbers: ");
+    // for(int i=0; i<=4; i++){
+    //     scanf("%d", &a[i]);
+    // }
+    // calSumOfEvenArrayElements(a);
+
+    int a[10];
+    printf("Enter 10 numbers: ");
+    for(int i=0; i<=9; i++){
+        scanf("%d", &a[i]);
+    }
+    findSmallestInArray(a);
+    return 0;
+}
