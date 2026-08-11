@@ -133,3 +133,60 @@
 //         printf("Not alphanumeric\n");
 //     return 0;
 // }
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+void countVowel(char str[]){
+    int count=0;
+    for(int i=0; str[i]!='\0'; i++){
+        if(str[i]=='a' | str[i]=='e' | str[i]=='i' | str[i]=='o' | str[i]=='u' | str[i]=='A' | str[i]=='E' | str[i]=='I' | str[i]=='O' | str[i]=='U'){
+            count++;
+        }
+    }
+    printf("Vowel count is %d", count);
+}
+
+int findFirstOcc(char str[], char ch){
+    for(int i=0; str[i]!='\0'; i++){
+        if(str[i]==ch){
+            return i;
+        }
+    }
+    return -1;
+}
+
+void findCharacter(char str[], int i1, int i2 char ch){
+    for(int i=i1; i<=i2; i++){
+        if(str[i]==ch){
+            printf("%c is available at %d index", ch, i);
+        }
+    }
+}
+
+
+
+int main(){
+    // char str[10];
+    // printf("Enter a string: ");
+    // fgets(str, 10, stdin);
+    // countVowel(str);
+    
+    // char str[10], ch;
+    // printf("Enter a string: ");
+    // fgets(str, 10, stdin);
+    // printf("Enter a character: ");
+    // scanf("%c", &ch);
+    // printf("%d", findFirstOcc(str, ch));
+    
+    char str[10], ch;
+    int i1, i2; 
+    printf("Enter a string: ");
+    fgets(str, 10, stdin);
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    printf("Enter index1 & index2: ");
+    scanf("%d%d", &i1, &i2);
+    findCharacter(str, i1, i2, ch);
+    return 0;
+}

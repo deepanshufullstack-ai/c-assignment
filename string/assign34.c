@@ -83,3 +83,70 @@
 //     printf("Uppercase string is: %s", str);
 //     return 0;
 // }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+void calLen(char str[]){
+    int i;
+    for(i=0; str[i]!='\0'; i++){
+        printf("%c", str[i]);
+    }
+    printf("\n%d", i);
+}
+
+void countOcc(char str[], char ch){
+    int count=0;
+    for(int i=0; str[i]!='\0'; i++){
+        if(str[i]==ch){
+            count++;
+        }
+    }
+    printf("%c count is %d", ch, count);
+}
+
+void countVowel(char str[]){
+    int count=0;
+    for(int i=0; str[i]!='\0'; i++){
+        if(str[i]=='a' | str[i]=='e' | str[i]=='i' | str[i]=='o' | str[i]=='u' | str[i]=='A' | str[i]=='E' | str[i]=='I' | str[i]=='O' | str[i]=='U'){
+            count++;
+        }
+    }
+    printf("Vowel count is %d", count);
+}
+
+void countSpace(char str[]){
+    int count=0;
+    for(int i=0; str[i]!='\0'; i++){
+        if(str[i]==' '){
+            count++;
+        }
+    }
+    printf("Space count is %d", count);
+}
+
+void convertUppercase(char str[]){
+    for(int i=0; str[i]!='\0'; i++){
+        str[i]=str[i]-32;
+    }
+    printf("%s", str);
+}
+
+int main(){
+    // char str[10]="Deepanshu";
+    // calLen(str);
+    
+    // char str[10]="Deepanshu";
+    // countOcc(str, 'e');
+    
+    // char str[10]="Deepanshu";
+    // countVowel(str);
+    
+    // char str[20]="Deepanshu Mahawar ";
+    // countSpace(str);
+    
+    char str[10]="deepanshu";
+    convertUppercase(str);
+    return 0;
+}

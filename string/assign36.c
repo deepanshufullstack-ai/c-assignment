@@ -151,3 +151,85 @@
 //     }
 //     return 0;
 // }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<string.h>
+int calLen(char str[]) {
+    int i;
+    for (i = 0; str[i] != '\0'; i++);
+    return i;
+}
+
+int reverseStr(char str[]){
+    int i, j;
+    for(i=0; str[i]!='\0'; i++);
+    for(j=i-1; j>=0; j--){
+        printf("%c", str[j]);
+    }
+}
+
+int compareStr(char str1[], char str2[]){
+    int len1, len2, res;
+    len1=strlen(str1);
+    len2=strlen(str2);
+    if(len1>len2 || len2>len1){
+        res=1;
+    } else {
+        for(int i=0; i<=len1; i++){
+            if(str1[i]==str2[i]){
+                res=0;
+                continue;
+            } else {
+                res=1;
+                break;
+            }
+        }
+    }
+    return res;
+}
+
+void convertUppercase(char str[]){
+    for(int i=0; str[i]!='\0'; i++){
+        str[i]=str[i]-32;
+    }
+    printf("%s", str);
+}
+
+void convertLower(char str[]){
+    for(int i=0; str[i]!='\0'; i++){
+        str[i]=str[i]+32;
+    }
+    printf("%s", str);
+}
+
+int main() {
+    // char str[10];
+    // printf("Enter a string: ");
+    // fgets(str, 10, stdin);
+    // printf("Length is %d", calLen(str)-1);
+
+    // char str[10];
+    // printf("Enter a string: ");
+    // fgets(str, 10, stdin);
+    // reverseStr(str);
+    
+    // char str1[10], str2[10];
+    // printf("Enter 1st string: ");
+    // fgets(str1, 10, stdin);
+    // printf("Enter 2nd string: ");
+    // fgets(str2, 10, stdin);
+    // printf("%d", compareStr(str1, str2));
+    
+    // char str[10];
+    // printf("Enter a string: ");
+    // fgets(str, 10, stdin);
+    // convertUppercase(str);
+    
+    // char str[10];
+    // printf("Enter a string: ");
+    // fgets(str, 10, stdin);
+    // convertLower(str);
+    return 0;
+}
