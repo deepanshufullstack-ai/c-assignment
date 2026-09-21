@@ -589,3 +589,46 @@ void highestIncome(struct Person p[], int n)
 }
 
  
+#include <stdio.h>
+
+void findLargest(int n);
+void findSecondLargest(int n);
+int main() {
+    findLargest(123);
+    findSecondLargest(123);
+    
+    return 0;
+}
+
+void findLargest(int n){
+    int max;
+    max=n%10;
+    n=n/10;
+    while (n != 0) {
+        if (max < n % 10) {
+            max = n % 10;
+        }
+
+        n = n / 10;
+    }
+    printf("Max is %d\n", max);
+}
+
+void findSecondLargest(int n){
+    int largest=-1;
+    int secondLargest=-1;
+    int digit;
+
+    while(n!=0){
+        digit=n%10;
+
+        if(digit>largest){
+            secondLargest=largest;
+            largest=digit;
+        } else if(digit>secondLargest && digit!=largest){
+            secondLargest=digit;
+        }
+        n=n/10;
+    }
+    printf("Second Max is %d\n", secondLargest);
+}
