@@ -116,3 +116,162 @@
 
 //     return 0;
 // }
+
+
+//pointers
+// #include <stdio.h>
+// int main()
+// {
+//     int num = 10;
+//     int *ptr;
+//     ptr = &num;
+//     printf("Value of num = %d\n", num);
+//     printf("Address of num = %p\n", &num);
+//     printf("Value stored in ptr = %p\n", ptr);
+//     printf("Value using pointer = %d\n", *ptr);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int num = 10;
+//     int *ptr = &num;
+//     printf("Before = %d\n", num);
+//     *ptr = 50;
+//     printf("After = %d\n", num);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int num = 10;
+//     int *ptr = &num;
+//     int **pptr = &ptr;
+//     printf("num = %d\n", num);
+//     printf("*ptr = %d\n", *ptr);
+//     printf("**pptr = %d\n", **pptr);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// void swap(int *a, int *b)
+// {
+//     int temp;
+//     temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
+// int main()
+// {
+//     int x = 10;
+//     int y = 20;
+//     printf("Before swap: x = %d, y = %d\n", x, y);
+//     swap(&x, &y);
+//     printf("After swap: x = %d, y = %d\n", x, y);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[] = {10, 20, 30, 40, 50};
+//     int *ptr = arr;
+//     for(int i = 0; i < 5; i++)
+//     {
+//         printf("%d ", *(ptr + i));
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[] = {10, 20, 30, 40, 50};
+//     int *ptr = arr;
+//     for(int i = 0; i < 5; i++)
+//     {
+//         *(ptr + i) = *(ptr + i) * 2;
+//     }
+//     for(int i = 0; i < 5; i++)
+//     {
+//         printf("%d ", arr[i]);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[] = {10, 20, 30, 40};
+//     int *ptr = arr;
+//     printf("%d\n", *ptr);
+//     ptr++;
+//     printf("%d\n", *ptr);
+//     ptr++;
+//     printf("%d\n", *ptr);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// struct Student
+// {
+//     int id;
+//     float marks;
+// };
+// int main()
+// {
+//     struct Student s = {101, 85.5};
+//     struct Student *ptr = &s;
+//     printf("ID = %d\n", ptr->id);
+//     printf("Marks = %.2f\n", ptr->marks);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int num = 10;
+//     float value = 20.5;
+//     void *ptr;
+//     ptr = &num;
+//     printf("Integer = %d\n", *(int*)ptr);
+//     ptr = &value;
+//     printf("Float = %.2f\n", *(float*)ptr);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int num1=10;
+//     int num2=20;
+//     int num3=30;
+//     int *ptr[3];
+//     ptr[0]=&num1;
+//     ptr[1]=&num2;
+//     ptr[2]=&num3;
+//     for(int i=0; i<3; i++){
+//         printf("%d ", *ptr[i]);
+//     }
+//     return 0;
+// }
+
+// dangling pointer
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     int *ptr = malloc(sizeof(int));
+//     *ptr = 100;
+//     printf("Value = %d\n", *ptr);
+//     free(ptr);
+//     ptr = NULL;
+//     return 0;
+// }
+
+
+
+
+
+

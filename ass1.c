@@ -102,7 +102,7 @@ void printHelloWorld(){
 void printMySirG(){
     printf("\"MySirG\"");
 }
-void printTeacherDay(){
+                               void printTeacherDay(){
     printf("\"Teacher Day\"");
 }
 void sum(int a, int b){
